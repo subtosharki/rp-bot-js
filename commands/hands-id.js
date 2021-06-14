@@ -1,6 +1,6 @@
 module.exports = {
-    name: "cuff",
-    description: "cuffs the person you @",
+    name: "hands-id",
+    description: "hands id to the person you @",
     execute(message, args) {
       const user = message.author;
       const taggedUser = message.mentions.users.first();
@@ -8,6 +8,6 @@ module.exports = {
             message.reply("Please mention someone");
             return;
           }
-		message.channel.send(`${taggedUser} ${User} has handed you their ID.`);
+		message.channel.send(`${taggedUser} ${user} has handed you their ID.`);
     },
 };

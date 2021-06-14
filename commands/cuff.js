@@ -8,6 +8,6 @@ module.exports = {
             message.reply("Please mention someone");
             return;
           }
-		message.channel.send(`${User} has cuffed ${taggedUser} succesfully.`);
+		message.reply(`has cuffed ${taggedUser} succesfully.`);
     },
 };
